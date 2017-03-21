@@ -1,0 +1,129 @@
+h1 {
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+li {
+  float: left;
+}
+li a,
+.dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover,
+.dropdown:hover .dropbtn {
+  background-color: red;
+}
+li.dropdown {
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+@media screen and (max-width: 800px) {
+  ul li,
+  ul li.dropdown,
+  .dropbtn {
+    float: none;
+  }
+}
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.newspaper {
+  -webkit-column-count: 2;
+  /* Chrome, Safari, Opera */
+  -moz-column-count: 2;
+  /* Firefox */
+  column-count: 2;
+  -webkit-column-width: 100px;
+  /* Chrome, Safari, Opera */
+  -moz-column-width: 100px;
+  /* Firefox */
+  column-width: 100px;
+}
+html {
+  height: 100%;
+}
+body {
+  font-size: 16px;
+  height: 100%;
+}
+#container {
+  background: grey;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 2.500em;
+  height: 100%;
+}
+#container .item {
+  background: rgba(255, 255, 255, 0.25);
+  color: #fff;
+  flex: 1 0 auto;
+  font-family: sans-serif;
+  margin: .5em;
+  position: relative;
+}
+#container .item .number {
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  position: absolute;
+  top-left: 15px;
+}
+.item:nth-child(1n) {
+  height: 100px;
+}
+.item:nth-child(1n) .sub-item {
+  height: 100px;
+}
+.item:nth-child(2n) {
+  height: 150px;
+}
+.item:nth-child(2n) .sub-item {
+  height: 150px;
+}
+.item:nth-child(3n) {
+  height: 200px;
+}
+.item:nth-child(3n) .sub-item {
+  height: 200px;
+}
+.item:nth-child(4n) {
+  height: 250px;
+}
+.item:nth-child(4n) .sub-item {
+  height: 250px;
+}
+.item:nth-child(5n) {
+  height: 300px;
+}
+.item:nth-child(5n) .sub-item {
+  height: 300px;
+}
